@@ -49,7 +49,6 @@ namespace ignition
     class ArrowVisual;
     class AxisVisual;
     class Camera;
-    class Capsule;
     class DepthCamera;
     class DirectionalLight;
     class GaussianNoisePass;
@@ -125,10 +124,6 @@ namespace ignition
     /// \def GizmoVisualPtr
     /// \brief Shared pointer to GizmoVisual
     typedef shared_ptr<GizmoVisual> GizmoVisualPtr;
-
-    /// \def CapsulePtr
-    /// \brief Shared pointer to Capsule
-    typedef shared_ptr<Capsule> CapsulePtr;
 
     /// \def GridPtr
     /// \brief Shared pointer to Grid

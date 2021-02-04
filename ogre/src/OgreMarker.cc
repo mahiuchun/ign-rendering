@@ -17,7 +17,6 @@
 
 #include <ignition/common/Console.hh>
 
-#include "ignition/rendering/ogre/OgreCapsule.hh"
 #include "ignition/rendering/ogre/OgreDynamicLines.hh"
 #include "ignition/rendering/ogre/OgreMarker.hh"
 #include "ignition/rendering/ogre/OgreMaterial.hh"

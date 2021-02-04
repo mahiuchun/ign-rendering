@@ -129,7 +129,7 @@ void buildScene(ScenePtr _scene)
 //! [white material]
 
   VisualPtr capsule_visual = _scene->CreateVisual();
-  CapsulePtr capsule = _scene->CreateCapsule();
+  MeshPtr capsule = _scene->CreateCapsule();
   capsule->SetLength(0.2);
   capsule->SetRadius(0.2);
   capsule_visual->AddGeometry(capsule);

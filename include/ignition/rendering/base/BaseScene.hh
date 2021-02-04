@@ -385,7 +385,7 @@ namespace ignition
       public: virtual MeshPtr CreateMesh(const MeshDescriptor &_desc) override;
 
       // Documentation inherited.
-      public: virtual CapsulePtr CreateCapsule() override;
+      public: virtual MeshPtr CreateCapsule() override;
 
       // Documentation inherited.
       public: virtual GridPtr CreateGrid() override;
@@ -545,7 +545,7 @@ namespace ignition
       /// \param[in] _id unique object id.
       /// \param[in] _name unique object name.
       /// \return Pointer to a capsule geometry object
-      protected: virtual CapsulePtr CreateCapsuleImpl(unsigned int _id,
+      protected: virtual MeshPtr CreateCapsuleImpl(unsigned int _id,
                      const std::string &_name) = 0;
 
       /// \brief Implementation for creating a grid geometry object

@@ -185,7 +185,7 @@ namespace ignition
                      override;
 
       // Documentation inherited
-      protected: virtual CapsulePtr CreateCapsuleImpl(unsigned int _id,
+      protected: virtual MeshPtr CreateCapsuleImpl(unsigned int _id,
                      const std::string &_name) override;
 
       // Documentation inherited

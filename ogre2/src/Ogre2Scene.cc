@@ -21,7 +21,6 @@
 #include "ignition/rendering/ogre2/Ogre2ArrowVisual.hh"
 #include "ignition/rendering/ogre2/Ogre2AxisVisual.hh"
 #include "ignition/rendering/ogre2/Ogre2Camera.hh"
-#include "ignition/rendering/ogre2/Ogre2Capsule.hh"
 #include "ignition/rendering/ogre2/Ogre2Conversions.hh"
 #include "ignition/rendering/ogre2/Ogre2DepthCamera.hh"
 #include "ignition/rendering/ogre2/Ogre2GizmoVisual.hh"
@@ -375,12 +374,10 @@ MeshPtr Ogre2Scene::CreateMeshImpl(unsigned int _id,
 }
 
 //////////////////////////////////////////////////
-CapsulePtr Ogre2Scene::CreateCapsuleImpl(unsigned int _id,
+MeshPtr Ogre2Scene::CreateCapsuleImpl(unsigned int _id,
     const std::string &_name)
 {
-  Ogre2CapsulePtr capsule(new Ogre2Capsule);
-  bool result = this->InitObject(capsule, _id, _name);
-  return (result) ? capsule : nullptr;
+  return this->CreateMeshImpl(_id, _name, "unit_capsule");
 }
 
 //////////////////////////////////////////////////
